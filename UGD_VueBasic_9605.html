@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>UGD</title>
     <script src="vue.js"></script>
 </head>
@@ -60,6 +61,7 @@
             }else {
                     this.salah =1;
                     this.isDisabled = true;
+                    angka: Math.floor(Math.random() * 10)+1;
                     this.kesempatan--;
                     if(this.kesempatan==0){
                         this.kalah=1;
